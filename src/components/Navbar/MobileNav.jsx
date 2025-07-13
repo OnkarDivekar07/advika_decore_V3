@@ -26,4 +26,5 @@ const MobileNav = ({ closeMenu }) => {
   );
 };
 
+
 export default React.memo(MobileNav);
