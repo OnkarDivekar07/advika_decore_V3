@@ -1,7 +1,7 @@
 // src/components/Navbar/MobileNav.jsx
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FiHome, FiShoppingCart, FiUser, FiHeart } from "react-icons/fi";
+import { FiHome, FiShoppingCart, FiUser } from "react-icons/fi"; // Removed FiHeart
 
 const MobileNav = ({ closeMenu }) => {
   const navigate = useNavigate();
@@ -12,12 +12,9 @@ const MobileNav = ({ closeMenu }) => {
   };
 
   return (
-    <div className="flex flex-col gap-3 mt-4">
+    <div className="flex flex-col gap-4 mt-4 px-4"> {/* Added horizontal padding for better spacing */}
       <button onClick={() => handleNav("/")} className="flex items-center gap-2 text-lg">
         <FiHome /> Home
-      </button>
-      <button onClick={() => handleNav("/wishlist")} className="flex items-center gap-2 text-lg">
-        <FiHeart /> Wishlist
       </button>
       <button onClick={() => handleNav("/cart")} className="flex items-center gap-2 text-lg">
         <FiShoppingCart /> Cart
