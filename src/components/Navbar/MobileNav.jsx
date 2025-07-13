@@ -12,7 +12,7 @@ const MobileNav = ({ closeMenu }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 mt-4">
+    <div className="flex flex-col gap-3 mt-4">
       <button onClick={() => handleNav("/")} className="flex items-center gap-2 text-lg">
         <FiHome /> Home
       </button>
